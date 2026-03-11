@@ -3,11 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  ArrowRight, 
-  Lightbulb, 
-  Shield, 
-  Target, 
+import {
+  ArrowRight,
+  Lightbulb,
+  Shield,
+  Target,
   Users,
   Award,
   Calendar,
@@ -127,16 +127,16 @@ export default function AboutSection() {
           <div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Story</h3>
             <p className="text-slate-600 mb-4 leading-relaxed">
-              Founded in 2018, Y Enterprises emerged from a simple observation: businesses were struggling 
-              to keep up with the rapid pace of digital transformation. We saw an opportunity to bridge 
+              Founded in 2018, Y Enterprises emerged from a simple observation: businesses were struggling
+              to keep up with the rapid pace of digital transformation. We saw an opportunity to bridge
               this gap using artificial intelligence.
             </p>
             <p className="text-slate-600 mb-4 leading-relaxed">
-              What started as a small team of passionate technologists has grown into a global force 
+              What started as a small team of passionate technologists has grown into a global force
               of digital marketing experts, data scientists, and AI specialists united by a common mission.
             </p>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Today, we serve over 500 clients across 25 countries, helping them navigate the complex 
+              Today, we serve over 500 clients across 25 countries, helping them navigate the complex
               digital landscape with innovative AI-powered solutions that deliver measurable results.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -163,14 +163,13 @@ export default function AboutSection() {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-slate-200 hidden md:block" />
-            
+
             <div className="space-y-8">
               {timeline.map((item, index) => (
                 <div
                   key={item.year}
-                  className={`flex items-center gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`flex items-center gap-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
                     <div className={`bg-white p-6 rounded-xl shadow-sm border border-slate-100 inline-block ${index % 2 === 0 ? "md:ml-auto" : ""}`}>
@@ -210,34 +209,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Team */}
-        <div className="mb-24">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">Meet Our Leadership</h3>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              The visionaries driving innovation at Y Enterprises
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member) => (
-              <Card key={member.name} className="border-0 shadow-sm hover:shadow-lg transition-shadow group">
-                <CardContent className="p-6 text-center">
-                  <div className="relative w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform"
-                    />
-                  </div>
-                  <h4 className="text-lg font-semibold text-slate-900">{member.name}</h4>
-                  <p className="text-red-600 text-sm font-medium mb-2">{member.role}</p>
-                  <p className="text-slate-600 text-sm">{member.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+
 
         {/* Stats */}
         <div className="bg-slate-900 rounded-3xl p-8 md:p-12">
