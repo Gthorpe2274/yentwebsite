@@ -28,7 +28,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["123 Innovation Drive", "San Francisco, CA 94105"],
+    details: ["75 So. Broadway, 4th Fl.", "White Plains, NY 10601"],
     color: "from-sky-500 to-blue-600",
   },
 
@@ -255,7 +255,7 @@ export default function ContactSection() {
             <div className="text-center">
               <MapPin className="h-12 w-12 text-slate-400 mx-auto mb-3" />
               <p className="text-slate-500 font-medium">Interactive Map</p>
-              <p className="text-slate-400 text-sm">123 Innovation Drive, San Francisco, CA</p>
+              <p className="text-slate-400 text-sm">75 So. Broadway, 4th Fl., White Plains, NY</p>
             </div>
           </div>
         </div>

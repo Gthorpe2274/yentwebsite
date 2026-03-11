@@ -147,8 +147,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-sky-400 shrink-0 mt-0.5" />
                 <span className="text-slate-400">
-                  123 Innovation Drive<br />
-                  San Francisco, CA 94105
+                  75 So. Broadway, 4th Fl.<br />
+                  White Plains, NY 10601
                 </span>
               </li>
 
