@@ -249,16 +249,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Map Placeholder */}
-        <div className="mt-12 rounded-2xl overflow-hidden shadow-lg h-80 bg-slate-100 relative">
-          <div className="absolute inset-0 flex items-center justify-center bg-slate-200">
-            <div className="text-center">
-              <MapPin className="h-12 w-12 text-slate-400 mx-auto mb-3" />
-              <p className="text-slate-500 font-medium">Interactive Map</p>
-              <p className="text-slate-400 text-sm">75 So. Broadway, 4th Fl., White Plains, NY</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
