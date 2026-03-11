@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -41,7 +41,7 @@ export default function Footer() {
     <footer id="contact" className="bg-slate-900 text-white relative overflow-hidden">
       {/* Hexagonal Pattern Background */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-full h-full" 
+        <div className="absolute top-0 left-0 w-full h-full"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill='%230ea5e9' fill-opacity='0.4'/%3E%3C/svg%3E")`,
             backgroundSize: '60px 60px'
@@ -58,9 +58,9 @@ export default function Footer() {
               <p className="text-slate-400">Get the latest insights on AI marketing delivered to your inbox.</p>
             </div>
             <div className="flex w-full md:w-auto gap-3">
-              <Input 
-                type="email" 
-                placeholder="Enter your email" 
+              <Input
+                type="email"
+                placeholder="Enter your email"
                 className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-500 w-full md:w-72 focus:border-sky-500"
               />
               <Button className="bg-red-600 hover:bg-red-700 text-white px-6 shrink-0">
@@ -151,12 +151,7 @@ export default function Footer() {
                   San Francisco, CA 94105
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-sky-400 shrink-0" />
-                <a href="tel:+1234567890" className="text-slate-400 hover:text-sky-400 transition-colors">
-                  +1 (234) 567-890
-                </a>
-              </li>
+
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-sky-400 shrink-0" />
                 <a href="mailto:info@yenterprises.com" className="text-slate-400 hover:text-sky-400 transition-colors">

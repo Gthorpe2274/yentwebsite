@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { 
+import {
   ArrowRight,
   Mail,
   Phone,
@@ -31,12 +31,7 @@ const contactInfo = [
     details: ["123 Innovation Drive", "San Francisco, CA 94105"],
     color: "from-sky-500 to-blue-600",
   },
-  {
-    icon: Phone,
-    title: "Call Us",
-    details: ["+1 (234) 567-890", "+1 (234) 567-891"],
-    color: "from-emerald-500 to-teal-600",
-  },
+
   {
     icon: Mail,
     title: "Email Us",
@@ -75,13 +70,13 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     setIsSubmitting(false);
     setIsSubmitted(true);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
@@ -159,7 +154,7 @@ export default function ContactSection() {
                         <Input
                           id="phone"
                           type="tel"
-                          placeholder="+1 (234) 567-890"
+                          placeholder="+1 (555) 000-0000"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="border-slate-200 focus:border-sky-500"
@@ -250,18 +245,7 @@ export default function ContactSection() {
               </Card>
             ))}
 
-            {/* Quick Links */}
-            <Card className="border-0 shadow-sm bg-slate-900 text-white mt-6">
-              <CardContent className="p-6">
-                <h4 className="font-semibold mb-3">Need Quick Help?</h4>
-                <p className="text-slate-400 text-sm mb-4">
-                  Our team is available to answer your questions.
-                </p>
-                <Button className="w-full bg-white text-slate-900 hover:bg-slate-100">
-                  <Phone className="mr-2 h-4 w-4" /> Call Now
-                </Button>
-              </CardContent>
-            </Card>
+
           </div>
         </div>
 
